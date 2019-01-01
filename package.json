@@ -1,0 +1,20 @@
+{
+  "name": "a-year-in-pixels",
+  "version": "1.0.0",
+  "description": "A project to track how you felt your day was over a period of a year",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dominion79/a-year-in-pixels"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "express"
+  ],
+  "author": "Steven A Wilson",
+  "license": "MIT"
+}
