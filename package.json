@@ -4,7 +4,7 @@
   "description": "A project to track how you felt your day was over a period of a year",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
