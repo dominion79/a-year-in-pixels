@@ -4,6 +4,7 @@
   "description": "A project to track how you felt your day was over a period of a year",
   "main": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "./node_modules/jest/bin/jest.js"
   },
   "repository": {
@@ -21,6 +22,11 @@
     "jest": "^23.6.0"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0"
   }
 }
