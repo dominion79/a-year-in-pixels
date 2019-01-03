@@ -1,5 +1,9 @@
 year:
-  day: 
-    id: 1
+  1: 
     date:  01-01-2019 
-    rating: 3  
+    rating: 3
+    note: 'Went foe new years day lunch with family and friends'
+  2:
+    date: 01-01-2019
+    rating: 2
+    note: 'Took my son to softplay and we both fell asleep on the sofa'
