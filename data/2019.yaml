@@ -4,6 +4,10 @@ year:
     rating: 3
     note: 'Went foe new years day lunch with family and friends'
   2:
-    date: 01-01-2019
+    date: 02-01-2019
     rating: 2
     note: 'Took my son to softplay and we both fell asleep on the sofa'
+  3:
+    date: 03-01-2019
+    rating: 2
+    note: 'We went shopping as a family then watched a movie in the evening'
