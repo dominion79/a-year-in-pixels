@@ -7,7 +7,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 
-const year = require('./middleware/get-year-data');
+const {getYearData} = require('./middleware/get-year-data');
 const app = express();
 
 const isDev = app.get('env') === 'development';
@@ -22,7 +22,7 @@ const njk = expressNunjucks(app, {
 });
 
 app.use(logger('dev'));
-app.use(year);
+app.use(getYearData);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
