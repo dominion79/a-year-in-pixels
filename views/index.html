@@ -11,14 +11,14 @@
 	<body>
 
 		<main>
-			<ul class="pixels" id="pixels">
+			<div class="pixels" id="pixels">
 				{% for item in emptyYear %}
-					<li class="pixel">
+					<div class="pixel">
 							<span class="id">{{ item.id }}</span>
 							<span class="date">{{ item.date }}</span>
-						</li>
+					</div>
 				{% endfor %}
-			</ul>
+			</div>
 		</main>
 
 	</body>
