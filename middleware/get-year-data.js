@@ -1,20 +1,31 @@
 const yaml = require('js-yaml');
 const fs   = require('fs');
 const moment = require('moment');
+const Rollbar = require("rollbar");
 const year = 2019;
+
+const rollbar = new Rollbar({
+    accessToken: 'a0fdfec7c9c040ff8fd48c9fbcf15585',
+    captureUncaught: true,
+    captureUnhandledRejections: true
+  });
+
 
 const getYearData = (req, res, next) => {
     console.log('Getting a year of data...');
     try {
-        // const year = yaml.safeLoad(fs.readFileSync('./data/2019.yaml', 'utf8'));
         const daysInAYear = getNumberOfDaysInAYear(year);
         const emptyYear = buildEmptyYear(daysInAYear, year);
+        const dataYear = getYearDataFromYaml();
+        rollbar.log(dataYear);
         res.locals.emptyYear = emptyYear;
     } catch (e) {
-        console.log(e);
+        rollbar.log(e);
     }
     next()
 }
+
+const getYearDataFromYaml = () => yaml.safeLoad(fs.readFileSync('./data/2019.yaml', 'utf8'));
 
 const buildEmptyYear = (daysInAYear, year) => {
     return [...Array(daysInAYear).keys()].map(function (day) {
