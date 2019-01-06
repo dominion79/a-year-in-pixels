@@ -3,6 +3,7 @@ const yaml = require('js-yaml');
 const fs   = require('fs');
 const moment = require('moment');
 const Rollbar = require("rollbar");
+
 const year = 2019;
 const filename = './data/2019.yaml';
 const classmap = {
@@ -12,7 +13,6 @@ const classmap = {
     4: 'very-good',
     5: 'amazing'
 }
-
 
 const rollbar = new Rollbar({
     accessToken: 'a0fdfec7c9c040ff8fd48c9fbcf15585',
