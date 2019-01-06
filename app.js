@@ -11,6 +11,8 @@ const {getYearData} = require('./middleware/get-year-data');
 const app = express();
 
 const isDev = app.get('env') === 'development';
+const filename = './data/2019.yaml';
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

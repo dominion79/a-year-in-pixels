@@ -22,9 +22,33 @@ body {
   height: 50px;
   background-color: #333;
   border: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+
+}
+
+.pixels .pixel.very-bad {
+  background-color: rgb(88, 90, 22);
+}
+.pixels .pixel.bad {
+  background-color: rgb(63, 170, 63);
+}
+.pixels .pixel.good {
+  background-color: yellow;
+  
+}
+.pixels .pixel.very-good {
+  background-color: blue;
+  
+}
+.pixels .pixel.amazing {
+  background-color: red;
 }
 
 .pixels .pixel span.id,
-.pixels .pixel span.date {
+.pixels .pixel span.date,
+.pixels .pixel span.rating, 
+.pixels .pixel span.note 
+{
   display: none;
 }

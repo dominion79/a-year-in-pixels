@@ -1,8 +1,18 @@
+const createError = require('http-errors');
 const yaml = require('js-yaml');
 const fs   = require('fs');
 const moment = require('moment');
 const Rollbar = require("rollbar");
 const year = 2019;
+const filename = './data/2019.yaml';
+const classmap = {
+    1: 'very-bad',
+    2: 'bad',
+    3: 'good',
+    4: 'very-good',
+    5: 'amazing'
+}
+
 
 const rollbar = new Rollbar({
     accessToken: 'a0fdfec7c9c040ff8fd48c9fbcf15585',
@@ -12,20 +22,22 @@ const rollbar = new Rollbar({
 
 
 const getYearData = (req, res, next) => {
-    console.log('Getting a year of data...');
     try {
-        const daysInAYear = getNumberOfDaysInAYear(year);
-        const emptyYear = buildEmptyYear(daysInAYear, year);
-        const dataYear = getYearDataFromYaml();
-        rollbar.log(dataYear);
-        res.locals.emptyYear = emptyYear;
-    } catch (e) {
-        rollbar.log(e);
+        const yearData = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+        mapRatingsToClasses(yearData.year);
+        res.locals.emptyYear = yearData.year;
+    } catch (error) {
+        rollbar.log(error);
+        next(createError(500));
     }
     next()
 }
 
-const getYearDataFromYaml = () => yaml.safeLoad(fs.readFileSync('./data/2019.yaml', 'utf8'));
+const mapRatingsToClasses = data => {
+    Object.keys(data).map(function(item) {
+        data[item].class = classmap[data[item].rating]
+    });
+}
 
 const buildEmptyYear = (daysInAYear, year) => {
     return [...Array(daysInAYear).keys()].map(function (day) {

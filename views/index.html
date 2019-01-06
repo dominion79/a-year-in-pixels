@@ -12,10 +12,12 @@
 
 		<main>
 			<div class="pixels" id="pixels">
-				{% for item in emptyYear %}
-					<div class="pixel">
-							<span class="id">{{ item.id }}</span>
+				{% for id, item in emptyYear %}
+					<div class="pixel {{ item.class }}">
+							<span class="id">{{ id }}</span>
 							<span class="date">{{ item.date }}</span>
+							<span class="rating">{{ item.rating }}</span>
+							<span class="note">{{ item.note }}</span>
 					</div>
 				{% endfor %}
 			</div>

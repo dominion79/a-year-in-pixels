@@ -15,7 +15,7 @@ describe('Check structure of empty year object', ()  => {
         const mockEmptyYear = buildMockEmptyYear();
         expect(emptyYear).toEqual(mockEmptyYear);
     });
-    test('first object has correct structure', () => {
+    test('Object has correct structure', () => {
         const mockEmptyYear = buildMockEmptyYear();
         const emptyYear = buildEmptyYear(1, 2019);
         expect(emptyYear[0]).toEqual(mockEmptyYear[0]);
