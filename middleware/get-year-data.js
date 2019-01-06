@@ -5,7 +5,6 @@ const moment = require('moment');
 const Rollbar = require("rollbar");
 
 const year = 2019;
-const filename = './data/2019.yaml';
 const classmap = {
     1: 'very-bad',
     2: 'bad',
@@ -23,7 +22,7 @@ const rollbar = new Rollbar({
 
 const getYearData = (req, res, next) => {
     try {
-        const yearData = yaml.safeLoad(fs.readFileSync(filename, 'utf8'));
+        const yearData = yaml.safeLoad(fs.readFileSync(res.locals.config.data, 'utf8'));
         mapRatingsToClasses(yearData.year);
         res.locals.emptyYear = yearData.year;
     } catch (error) {
