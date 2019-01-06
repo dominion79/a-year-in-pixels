@@ -1,13 +1,31 @@
+# --------------------
+# Scale
+# --------------------
+# 1 = Very bad day
+# 2 = Bad day
+# 3 = Good day
+# 4 = Very good day
+# 5 = Amazing day
+# --------------------
+
 year:
   1: 
     date:  01-01-2019 
-    rating: 3
-    note: 'Went foe new years day lunch with family and friends'
+    rating: 4
+    note: "Went foe new years day lunch with family and friends"
   2:
     date: 02-01-2019
-    rating: 2
-    note: 'Took my son to softplay and we both fell asleep on the sofa'
+    rating: 3
+    note: "Took my son to softplay and we both fell asleep on the sofa"
   3:
     date: 03-01-2019
-    rating: 2
-    note: 'We went shopping as a family then watched a movie in the evening'
+    rating: 4
+    note: "We went shopping as a family then watched a movie in the evening"
+  4: 
+    date: 04-01-2019
+    rating: 3
+    note: "Took my 2 year old to the trampline park the we fell asleep on the sofa, lazy day"
+  5: 
+    date: 04-01-2019
+    rating: 4
+    note: "We took our son 2 year old bowling for the first time, he didn't really get it but was still fun"
