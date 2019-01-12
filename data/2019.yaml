@@ -45,3 +45,15 @@ year:
     date: 09-01-2019
     rating: 3
     note: "Good day at work, made some progress with developer recruitment"
+  10: 
+    date: 10-01-2019
+    rating: 3
+    note: "Good day made some good progress with recruitment and caught some mistakes before they become a problem"
+  11: 
+    date: 11-01-2019
+    rating: 2
+    note: "I need to check my spelling better, embarrassing"
+  12: 
+    date: 12-01-2019
+    rating: 2
+    note: "Hard day with the kids, Our son took a long time to get to bed"
