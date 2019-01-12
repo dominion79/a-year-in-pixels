@@ -7,11 +7,11 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 
+const {loadConfig} = require('./middleware/load-config');
 const {getYearData} = require('./middleware/get-year-data');
 const app = express();
 
 const isDev = app.get('env') === 'development';
-const filename = './data/2019.yaml';
 
 
 // view engine setup
@@ -24,6 +24,7 @@ const njk = expressNunjucks(app, {
 });
 
 app.use(logger('dev'));
+app.use(loadConfig);
 app.use(getYearData);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
