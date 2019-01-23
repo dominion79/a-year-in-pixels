@@ -57,3 +57,48 @@ year:
     date: 12-01-2019
     rating: 2
     note: "Hard day with the kids, Our son took a long time to get to bed"
+  13: 
+    date: 13-01-2019
+    rating: 5
+    note: "Sunday dinner at a friends house, great day"
+  14: 
+    date: 14-01-2019
+    rating: 3
+    note: "Normal day at work"
+  15: 
+    date: 15-01-2019
+    rating: 3
+    note: "Good day at work, out out of the office, our daughter had her jabs, screamed all night"
+  16: 
+    date: 16-01-2019
+    rating: 3
+    note: "Odd day at work, worrying that one person might become head of the studio, but ended on a great meeting with Sheffield University"
+  17: 
+    date: 17-01-2019
+    rating: 4
+    note: "Good day, talked to someone new and had a good conversation"
+  18: 
+    date: 18-01-2019
+    rating: 5
+    note: "Great day, sense checked a presentation and it went down very well"
+  19: 
+    date: 19-01-2019
+    rating: 1
+    note: "Shit day, cracked my phone's screen, and I'm a dick"
+  20: 
+    date: 20-01-2019
+    rating: 1
+    note: "Another shit day, I need to get a handle on myself, exercise more"
+  21: 
+    date: 21-01-2019
+    rating: 1
+    note: "Shit day, sometimes the peopel I work with are dicks"
+  22: 
+    date: 22-01-2019
+    rating: 5
+    note: "Amazing day, got a great feeback form my presentaton to the SMT meeting at work, and my first new dev hire is doing great work"
+  23: 
+    date: 23-01-2019
+    rating: 3
+    note: "Good day, my first senior developer management meeting in London"
+  
