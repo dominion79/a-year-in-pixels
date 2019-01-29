@@ -101,4 +101,28 @@ year:
     date: 23-01-2019
     rating: 3
     note: "Good day, my first senior developer management meeting in London"
+  24: 
+    date: 24-01-2019
+    rating: 4
+    note: "Good day, ran my first how to use your mac computer workshop, it went well"
+  25: 
+    date: 25-01-2019
+    rating: 4
+    note: "Really good day, still feeling the love on slack from my workshop yesterday"
+  26: 
+    date: 26-01-2019
+    rating: 3
+    note: "Productive day, cleaned out the shed and jet washed the back yard"
+  27: 
+    date: 27-01-2019
+    rating: 3
+    note: "As chilled our a sunday can be with a 2 year old"
+  28: 
+    date: 28-01-2019
+    rating: 2
+    note: "Testing day, sick of people moaning at me"
+  29: 
+    date: 29-01-2019
+    rating: 2
+    note: "People are still fucking moaning"
   
